@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<GenerateDocumentationFile>True</GenerateDocumentationFile>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.5" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+		<PackageReference Include="Serilog" Version="2.12.0" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="3.1.0" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="4.1.2" />
+	</ItemGroup>
+
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Core\MovieApp.Application.Contracts\MovieApp.Application.Contracts.csproj" />
+		<ProjectReference Include="..\..\Core\MovieApp.Application\MovieApp.Application.csproj" />
+		<ProjectReference Include="..\..\Core\MovieApp.Infrastructure\MovieApp.Infrastructure.csproj" />
+		<ProjectReference Include="..\..\Core\MovieApp.SharedKernel\MovieApp.SharedKernel.csproj" />
+	</ItemGroup>
+
+</Project>
