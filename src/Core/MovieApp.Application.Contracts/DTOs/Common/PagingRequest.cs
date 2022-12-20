@@ -4,7 +4,7 @@ public class PagingRequest : BaseDTO
 {
     public PagingRequest()
     {
-        Filters = new ();
+        Filters = new();
     }
 
     public int Page { get; set; } = 1;

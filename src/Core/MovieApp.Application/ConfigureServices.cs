@@ -1,3 +1,4 @@
+using MovieApp.Application.Contracts;
 using Scrutor;
 using System.Reflection;
 

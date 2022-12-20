@@ -58,7 +58,7 @@ public class EFRepository<T> : IRepository<T> where T : BaseEntity
     }
 
     public Task<int> SaveChangesAsync(bool isCommit = true, CancellationToken cancellationToken = new CancellationToken()) => _context.SaveChangesAsync(isCommit, cancellationToken);
-        
+
     public T Find(Expression<Func<T, bool>> match) => Table.SingleOrDefault(match);
 
     public ICollection<T> FindAll(Expression<Func<T, bool>> match) => Table.Where(match).ToList();

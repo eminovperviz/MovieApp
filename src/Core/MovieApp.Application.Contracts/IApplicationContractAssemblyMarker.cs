@@ -1,6 +1,6 @@
 namespace MovieApp.Application.Contracts;
 
-internal class IApplicationContractAssemblyMarker
+internal interface IApplicationContractAssemblyMarker
 {
 
 }

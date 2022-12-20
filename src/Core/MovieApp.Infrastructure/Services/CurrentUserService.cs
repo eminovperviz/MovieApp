@@ -1,4 +1,3 @@
-using MovieApp.Application.Contracts.Interfaces;
 using Microsoft.AspNetCore.Http;
 using System.Security.Claims;
 

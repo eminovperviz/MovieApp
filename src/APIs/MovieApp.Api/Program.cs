@@ -1,11 +1,13 @@
 using MovieApp.Api.DependencyInjection.Api;
-using Serilog;
+using MovieApp.Persistence;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddApiProjectInjection(builder.Configuration);
 
 var app = builder.Build();
+
+app.MigrateDatabase();
 
 if (app.Environment.IsDevelopment())
 {

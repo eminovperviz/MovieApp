@@ -1,11 +1,7 @@
-using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using System.Reflection;
 
 namespace MovieApp.Persistence.Extensions;
-/// <summary>
-/// Original: https://stackoverflow.com/a/47263024/13729
-/// </summary>
 public static class ModelBuilderExtensions
 {
     /// <summary>

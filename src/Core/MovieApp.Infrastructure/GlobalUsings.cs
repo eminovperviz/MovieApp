@@ -5,3 +5,6 @@ global using MovieApp.Application.Exceptions;
 global using MovieApp.Infrastructure.Services;
 global using MovieApp.Persistence;
 global using MovieApp.SharedKernel.Enums;
+global using MovieApp.Domain.Entities;
+global using MovieApp.Domain.Interfaces;
+global using MovieApp.Persistence.Data;

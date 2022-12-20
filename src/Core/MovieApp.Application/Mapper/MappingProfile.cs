@@ -1,9 +1,8 @@
 using System.Reflection;
-using AutoMapper;
 
 namespace MovieApp.Application;
 
-public class MappingProfile : Profile
+public sealed class MappingProfile : Profile
 {
     public MappingProfile()
     {
@@ -33,4 +32,16 @@ public class MappingProfile : Profile
             methodInfo?.Invoke(instance, new object[] { this });
         }
     }
+}
+
+public class MapperProfile : Profile
+{
+    public MapperProfile()
+    {
+        CreateMap<MovieEntity, MovieEntityAddRequest>().ReverseMap();
+        CreateMap<MovieEntity, MovieEntityUpdateRequest>().ReverseMap();
+        CreateMap<MovieEntity, MovieEntityDTO>().ReverseMap();
+        CreateMap<MovieEntity, MovieEntityTableResponse>().ReverseMap();
+    }
+
 }

@@ -2,7 +2,7 @@ namespace MovieApp.Application.Contracts.DTOs;
 
 public class BaseDTO
 {
-   
+
 }
 
 public class BasePagingDTO<T> : BaseDTO

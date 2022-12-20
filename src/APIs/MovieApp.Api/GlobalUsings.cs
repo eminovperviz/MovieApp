@@ -5,3 +5,6 @@ global using MovieApp.Application;
 global using MovieApp.Application.Filters;
 global using MovieApp.Infrastructure;
 global using System.Text.Json.Serialization;
+global using MovieApp.Application.Contracts.Interfaces;
+global using MovieApp.Application.Contracts.DTOs;
+global using MovieApp.Api.Controllers;

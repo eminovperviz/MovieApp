@@ -12,6 +12,6 @@ public abstract class BaseEntity<T> : BaseEntity
 
 public class BaseEntity : IEntity
 {
-     
+
 }
 
